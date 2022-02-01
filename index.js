@@ -11,8 +11,13 @@ app.get('/temperature', function (req, res) {
 
   var tempinfo = "";
   requestedcity = req.query.city
+  const axios = require('axios'),
+  url = "https://api.openweathermap.org/data/2.5/weather?q=" + requestedcity + "&appid=51a0e25eb9805b361fdec0c4e4a094ea&units=metric";
+axios.get(url)
+    .then (response => { 
+tempinfo = (response.data.main.temp);
 
-  
+
   })
 app.listen(PORT,
   () => console.log("http://localhost:8080 Online!")
