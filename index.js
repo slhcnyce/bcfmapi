@@ -16,6 +16,15 @@ app.get('/temperature', function (req, res) {
 axios.get(url)
     .then (response => { 
 tempinfo = (response.data.main.temp);
+var tempdata = ({"temperature":tempinfo});
+var tempdata = JSON.stringify(tempdata);
+var parseddata = JSON.parse(tempdata);
+res.send(parseddata);
+})
+.catch(error => {
+console.error(error);
+})
+
 
 
   })
