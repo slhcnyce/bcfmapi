@@ -32,4 +32,4 @@ jobs:
 
           docker_options: "--no-cache"
 
-          process_type: worker
+          process_type: web
