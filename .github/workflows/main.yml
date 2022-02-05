@@ -14,7 +14,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.SECRETNAME}}
           heroku_app_name: ${{secrets.HEROKUAPPNAME}}
-          heroku_email: ${{secrets.HER_EMAİL}}
+          heroku_email: ${{secrets.HER_EMAIL}}
           usedocker: true
           justlogin: true
       - run: heroku auth:whoami
