@@ -20,7 +20,7 @@ jobs:
         uses: gonuit/heroku-docker-deploy@v1.3.3 # GitHub action name (leave it as it is).
         with:
 
-          heroku_email: ${{secrets.HER_EMAIL}}
+          email: ${{secrets.HER_EMAIL}}
           heroku_api_key: ${{secrets.SECRETNAME}}
           heroku_app_name: ${{secrets.HEROKUAPPNAME}}
 
