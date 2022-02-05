@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/slhcnyce/bcfmapi.git
+        git clone 'https://github.com/slhcnyce/bcfmapi.git
       }
     }
      
