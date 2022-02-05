@@ -13,8 +13,8 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.SECRETNAME}}
-          heroku_app_name: "bcfmcaseapi"
-          heroku_email: "salihcanyce@gmail.com"
+          heroku_app_name: ${{secrets.HEROKUAPPNAME}}
+          heroku_email: ${{secrets.HER_EMAİL}}
           usedocker: true
           justlogin: true
       - run: heroku auth:whoami
