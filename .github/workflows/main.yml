@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
@@ -18,5 +17,5 @@ jobs:
           heroku_email: "salihcanyce@gmail.com"
           usedocker: true
           justlogin: true
-        run: heroku auth:whoami
+      - run: heroku auth:whoami
       
