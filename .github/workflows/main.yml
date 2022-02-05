@@ -16,3 +16,6 @@ jobs:
           heroku_app_name: "bcfmcaseapi"
           heroku_email: "salihcanyce@gmail.com"
           usedocker: true
+          justlogin: true
+      - run: heroku auth:whoami
+
