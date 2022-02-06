@@ -38,10 +38,10 @@ Komutunu kullanıyoruz.
 
 
 
-## Çalışmalar
+# Çalışmalar
 Görev 3 ve Görev 4 denemelerimden ve çalışmalarımdan bu başlık altında bahsedeceğim.
 
-# Görev 4 denemesi
+## Görev 4 denemesi
 Build aldığım image dosyasını çalıştırmak için aws ec2 kullanma kararı aldım.
 
 Image dosyamı ec2'ya pushlamak için dockerhub kullandım.
@@ -62,7 +62,7 @@ Uygulamaya aşağıdaki linklerden erişebilirsiniz.
 http://54.159.195.14/    -------------------------------  http://54.159.195.14/temperature?city=ankara
 http://ec2-54-159-195-14.compute-1.amazonaws.com/   -------------------------------   http://ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
 
-# Görev 3 denemesi
+## Görev 3 denemesi
 Uygulamamı CI/CD araçlarından Github Actions ile derleyerek hedef sunucuda container olarak çalıştırmak istedim.
 
 Github actions kullanmak için bir pipeline oluşturmam gerekti ve oluşturacağım pipeline'ı yazmak için aws.yml uzantılı bi dosya oluşturdum.
