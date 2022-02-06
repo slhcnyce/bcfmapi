@@ -57,6 +57,9 @@ Ec2 instance'ime bağlanıp docker kurdum.
 
 Ec2 üzerinden dockerhubdan çekmiş olduğum image dosyamı çalıştırdım.
 
+![adsadas](https://user-images.githubusercontent.com/97128581/152684942-e7d1af7b-8807-4e7c-a903-d1181f420614.png)
+
+
 Uygulamaya aşağıdaki linklerden erişebilirsiniz.
 
 http://54.159.195.14/ <br />
