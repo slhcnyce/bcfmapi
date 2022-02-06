@@ -59,8 +59,8 @@ Ec2 üzerinden dockerhubdan çekmiş olduğum image dosyamı çalıştırdım.
 
 Uygulamaya aşağıdaki linklerden erişebilirsiniz.
 
-54.159.195.14/    -------------------------------  54.159.195.14/temperature?city=ankara
-ec2-54-159-195-14.compute-1.amazonaws.com/   -------------------------------   ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
+http://54.159.195.14/    -------------------------------  http://54.159.195.14/temperature?city=ankara
+http://ec2-54-159-195-14.compute-1.amazonaws.com/   -------------------------------   http://ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
 
 # Görev 3 denemesi
 Uygulamamı CI/CD araçlarından Github Actions ile derleyerek hedef sunucuda container olarak çalıştırmak istedim.
@@ -70,3 +70,4 @@ Github actions kullanmak için bir pipeline oluşturmam gerekti ve oluşturacağ
 Oluşturduğum yml dosyası CI yaparak ne zaman github üzerinden bir commit atılırsa Aws Ecr servisine docker ile build alarak oluşturduğu image'i pushlayacak.
 
 Github Actions üzerinden kontrol ettiğimde jobların sorunsuz bir şekilde çalıştığını ve image dosyasının aws ecr servisindeki repoma pushlandığını görebildim.
+![Adsız](https://user-images.githubusercontent.com/97128581/152684617-cb4fae9c-b19a-4dc9-ae50-10a1475c9cec.png)
