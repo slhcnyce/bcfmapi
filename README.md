@@ -32,3 +32,41 @@ Uygulamamızı interactive terminalde detach modda default atanmış 8080 portu 
 docker run -it -d -p 3000:8080 bcfmapi
 ```
 Komutunu kullanıyoruz.
+
+
+
+
+
+
+## Çalışmalar
+Görev 3 ve Görev 4 denemelerimden ve çalışmalarımdan bu başlık altında bahsedeceğim.
+
+# Görev 4 denemesi
+Build aldığım image dosyasını çalıştırmak için aws ec2 kullanma kararı aldım.
+
+Image dosyamı ec2'ya pushlamak için dockerhub kullandım.
+
+Dockerhub üzerinden uygulamama
+
+```bash
+docker run slhcnyce/bcfmapi
+```
+komutu ile erişebilirsiniz.
+
+Ec2 instance'ime bağlanıp docker kurdum.
+
+Ec2 üzerinden dockerhubdan çekmiş olduğum image dosyamı çalıştırdım.
+
+Uygulamaya aşağıdaki linklerden erişebilirsiniz.
+
+54.159.195.14/    -------------------------------  54.159.195.14/temperature?city=ankara
+ec2-54-159-195-14.compute-1.amazonaws.com/   -------------------------------   ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
+
+# Görev 3 denemesi
+Uygulamamı CI/CD araçlarından Github Actions ile derleyerek hedef sunucuda container olarak çalıştırmak istedim.
+
+Github actions kullanmak için bir pipeline oluşturmam gerekti ve oluşturacağım pipeline'ı yazmak için aws.yml uzantılı bi dosya oluşturdum.
+
+Oluşturduğum yml dosyası CI yaparak ne zaman github üzerinden bir commit atılırsa Aws Ecr servisine docker ile build alarak oluşturduğu image'i pushlayacak.
+
+Github Actions üzerinden kontrol ettiğimde jobların sorunsuz bir şekilde çalıştığını ve image dosyasının aws ecr servisindeki repoma pushlandığını görebildim.
