@@ -59,8 +59,10 @@ Ec2 üzerinden dockerhubdan çekmiş olduğum image dosyamı çalıştırdım.
 
 Uygulamaya aşağıdaki linklerden erişebilirsiniz.
 
-http://54.159.195.14/    ----------------------------------------------------------------------------------------------------  http://54.159.195.14/temperature?city=ankara
-http://ec2-54-159-195-14.compute-1.amazonaws.com/   -------------------------------   http://ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
+http://54.159.195.14/
+http://54.159.195.14/temperature?city=ankara
+http://ec2-54-159-195-14.compute-1.amazonaws.com/
+http://ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
 
 ## Görev 3 denemesi
 Uygulamamı CI/CD araçlarından Github Actions ile derleyerek hedef sunucuda container olarak çalıştırmak istedim.
