@@ -32,3 +32,7 @@ jobs:
 
           docker_options: "--no-cache"
 
+<<<<<<< HEAD
+=======
+          process_type: web
+>>>>>>> fcbb911b5200ffaa190ab58fe195532bde70a016
