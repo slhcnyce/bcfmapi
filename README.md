@@ -90,4 +90,5 @@ Pipeline'ı çalıştırıp commit attığımda uygulamayı docker ile build al�
 
 ![her](https://user-images.githubusercontent.com/97128581/152685172-a94f40a7-65d9-40be-8c45-f646cba1e4ca.png)
 
-Ancak Heroku üzerinden uygulamamı çalıştırmayı denediğimde hata aldım.
+Ancak Heroku üzerinden uygulamamı çalıştırmayı denediğimde release aldım lakin port yüzünden herokudan port hatası aldım.
+
