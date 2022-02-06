@@ -68,6 +68,8 @@ http://ec2-54-159-195-14.compute-1.amazonaws.com/ <br />
 http://ec2-54-159-195-14.compute-1.amazonaws.com/temperature?city=ankara
 
 ## Görev 3 denemesi
+
+--DENEME.1--
 Uygulamamı CI/CD araçlarından Github Actions ile derleyerek hedef sunucuda container olarak çalıştırmak istedim.
 
 Github actions kullanmak için bir pipeline oluşturmam gerekti ve oluşturacağım pipeline'ı yazmak için aws.yml uzantılı bi dosya oluşturdum.
@@ -76,3 +78,16 @@ Oluşturduğum yml dosyası CI yaparak ne zaman github üzerinden bir commit at�
 
 Github Actions üzerinden kontrol ettiğimde jobların sorunsuz bir şekilde çalıştığını ve image dosyasının aws ecr servisindeki repoma pushlandığını görebildim.
 ![Adsız](https://user-images.githubusercontent.com/97128581/152684617-cb4fae9c-b19a-4dc9-ae50-10a1475c9cec.png)
+
+--DENEME.2--
+Uygulamamı Github Actions ile derleyerek Heroku üzerinde container olarak çalıştırmak istedim
+
+Bir pipeline oluşturdum ve main.yml dosyasının içine yazdım.
+
+Pipeline öncelikle github üzerinden commit atılan uygulamayı docker ile build almalı, sonrasında ise build aldığı uygulamayı Heroku reposuna pushlayarak orda container olarak çalıştırmalıydı.
+
+Pipeline'ı çalıştırıp commit attığımda uygulamayı docker ile build alıp Heroku reposuna pushladığını gördüm.
+
+![her](https://user-images.githubusercontent.com/97128581/152685172-a94f40a7-65d9-40be-8c45-f646cba1e4ca.png)
+
+Ancak Heroku üzerinden uygulamamı çalıştırmayı denediğimde hata aldım.
